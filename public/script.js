@@ -9,7 +9,7 @@ const uploadResultEl = document.getElementById('uploadResult');
 // --- Configuration ---
 // Adjust these URLs if your backend runs elsewhere
 // For local testing:
-const backendUrl = 'http://localhost:3000/api';
+const backendUrl = 'https://speed-test-app-gz8i.onrender.com//api';
 // For deployment (replace with your Render URL later):
 // const backendUrl = 'https://your-render-app-name.onrender.com/api'; // Example: https://my-speed-tester.onrender.com/api
 
