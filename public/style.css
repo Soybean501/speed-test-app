@@ -1,0 +1,68 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #555;
+}
+
+#startButton {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#startButton:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+#startButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#results {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#results p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+#results strong {
+    color: #007bff;
+}
+
+#status {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    min-height: 20px; /* Prevent layout shift */
+    color: #dc3545; /* Error color */
+}
+
+#status.testing {
+    color: #ffc107; /* Testing color */
+}
+
+#status.complete {
+    color: #28a745; /* Success color */
+}
